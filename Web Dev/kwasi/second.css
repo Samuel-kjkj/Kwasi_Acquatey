@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #002339;
+}
+.body{
+    animation-name: body;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes name {
+    0%{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 50px;
+        left: 200px;
+    }
+    100%{
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+}
+h1{
+    font-size: 35pt;
+    color: rgb(28, 65, 26);
+    border-bottom: 3px;
+    border-color: rgb(28, 65, 26);
+    font-weight: 550;
+}
+h1 span{
+    font-size: 20pt;
+    color: aliceblue;
+    font-weight: 200;
+}
+.title{
+    display: flex;
+    border-bottom: 4px solid rgb(28, 65, 26);
+    width: fit-content;
+}
+.container{
+    width: 75vw;
+    height: 80vh;
+    padding-left: 0;
+    padding-top: 200px;
+}
+.display input{
+    border: none;
+    outline: none;
+    width: 50vw;
+    height: 5vw;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin: 20px 0px;
+    font-size: 2.5svi;    
+    padding: vw;
+}
+.copy{
+    background-image: url(copy.jpg);
+    height: 5vw;
+    width: 5vw;
+    background-size: contain;
+    background-position: center;
+    outline: none;
+    margin: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+.generate input{
+    margin-top: 20px ;
+    border: none;
+    padding: 2vw;
+    height: auto;
+    border-radius: 3px;
+    font-size: 2vw;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+    background-color: #fff;
+}
+
+.generate input:hover{
+    background-color: rgb(28, 65, 26);
+    color: #fff;
+    
+}

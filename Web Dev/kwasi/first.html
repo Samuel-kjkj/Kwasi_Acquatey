@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>next gen calculator</title>
+    <link rel="stylesheet" href="first.css">
+</head>
+<body>
+    <div class="right">
+        <input type="button" value="Scientific" class="scient" onclick=" Ctrl + R"> 
+        
+        <input type="button" value="Programmer" class="scient"> 
+
+        <input type="button" value="Currency" class="scient">
+        
+        <input type="button" value="Speed" class="scient">
+
+        <input type="button" value="Weight" class="scient">
+    </div>
+    <div class="container">
+       <div class="calculator">
+        <form>
+            <div class="display">
+                <input type="text" class="press" id="display">
+            </div>
+            <div  class="row">
+                <input  type="button" class="press" value="log" onclick="display.value += '' " id="scientific">
+                <input  type="button" class="press" value="mod" onclick="display.value += '' " id="scientific">
+                <input type="button" class="press" value="AC" onclick="display.value = '' " >
+                <input type="button" class="press" value="DEL" onclick="display.value = display.value.toString().slice(0, -1)" >
+                <input type="button" class="press" value="." onclick="display.value += '.' " >
+                <input  type="button" class="press" value="/" onclick="display.value += '/' " >
+            </div>
+            <div class="row">
+                <input  type="button" class="press" value="(" onclick="display.value += '(' " id="scientific">
+                <input  type="button" class="press" value=")" onclick="display.value += ')' " id="scientific">
+                <input type="button" class="press" value="9" onclick="display.value += '9' " >
+                <input type="button" class="press" value="8" onclick="display.value += '8' " >
+                <input type="button" class="press" value="7" onclick="display.value += '7' " >
+                <input type="button" class="press" value="x" onclick="display.value += '*' " >
+            </div>
+            <div class="row">
+                <input  type="button" class="press" value="In" onclick="display.value += '' " id="scientific">
+                <input  type="button" class="press" value="sqrt" onclick= "display.value += '** 0.5' " id="scientific">
+                <input type="button" class="press" value="6" onclick="display.value += '6' " >
+                <input type="button" class="press" value="5" onclick="display.value += '5' " >
+                <input type="button" class="press" value="4" onclick="display.value += '4' " >
+                <input type="button" class="press" value="-" onclick="display.value += '-' " >
+            </div>
+            <div class="row">
+                <input  type="button" class="press" value="e" onclick="display.value += 'e' " id="scientific">
+                <input  type="button" class="press" value="exp" onclick="display.value += '**' " id="scientific">
+                <input type="button" class="press" value="3" onclick="display.value += '3' " >
+                <input type="button" class="press" value="2" onclick="display.value += '2' " >
+                <input type="button" class="press" value="1" onclick="display.value += '1' " >
+                <input type="button" class="press" value="+" onclick="display.value += '+' " >
+            </div>
+            <div class="row">
+                <input  type="button" class="press" value="x10" onclick="display.value += '*10**' " id="scientific">
+                <input  type="button" class="press" value="^2" onclick="display.value = display.value ** 2 " id="scientific">
+                <input type="button" class="press" value="00" onclick="display.value += '00' " >
+                <input type="button" class="press" value="0" onclick="display.value += '0' " >
+                <input type="button" class="press" value="=" id="equalto" onclick="display.value = eval(display.value) " >
+            </div>
+           
+        </form>
+        </div>
+        
+    </div>
+     
+</body>
+</html>
